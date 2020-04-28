@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title> Contact Us </title> <!-- Title -->
+<script>    // JS
+  function submitted()
+  {
+  alert("submitted!!!");
+  }
+</script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">  <!-- My CSS sheets file-->
+</head>
+
+<!-- BODY -->
+
+<body id = "body">
+
+<nav class = "nav1">
+
+<img src="logo.jpg" alt = "logo" width = 100 height = 100>   <!-- LOGO -->
+<p align="right">
+<a href="Login Form.html" alt = "Login"> login </a>   <!-- Login Page -->
+<br>
+<br>
+<a href="Signup Form.html" alt = "Signup" > Signup </a> <!-- Registration Form -->
+</p>
+</nav>
+
+
+<div class="div">
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="About.html">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="Contact us.html">Contact Us</a>
+  </li>
+</ul>
+
+<form ALIGN="center" onsubmit="submitted(); return false;">
+  <br><br>
+User name:
+<input type="text"  placeholder="Enter Your Name:"> <br><br>
+Email Id:
+<input type="email"  placeholder="Enter Your Email Address:" required><br><br>
+Phone Number:
+<input type="number"  placeholder="Enter Phone Number:" required><br><br>Query:
+<textarea name="Query"> </textarea><br><br>
+<input id="submit" type="submit" value="Submit">
+</form>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer id="footer"><b>
+Copyrights &copy; 1999 verified!!!!</b>
+</footer>
+</body>
+</html>
