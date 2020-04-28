@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title> Signup Page </title>    <!-- Title -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">    <!-- My CSS sheets file-->
+<script>        // JS
+  function registered(){
+    alert("Registered Successfully!!!");
+  }
+</script>
+</head>
+
+
+<!-- BODY -->
+<body id = "body">
+
+<nav class = "nav1">
+
+<img src="logo.jpg" alt = "logo" width = 100 height = 100>   <!-- LOGO -->
+<p align="right">
+<a href="Login Form.html" alt = "Login"> login </a>     <!-- Login Page -->
+<br>
+<br>
+</p>
+</nav>
+
+
+<div class="div">
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="About.html">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Contact us.html">Contact Us</a>
+  </li>
+</ul>
+
+
+ <form align="center" onsubmit="registered(); return true;">
+                <h3>Registration</h3>
+                    <label for="firstName: ">First Name</label>
+                        <input type="text" id="firstName" placeholder="First Name"autofocus>
+                  <br><br>
+                    <label for="lastName: ">Last Name</label>
+                        <input type="text" id="lastName" placeholder="Last Name" autofocus>
+                        <br><br>
+                    <label for="email">Email* </label>
+                        <input type="email" id="email" placeholder="Email" name= "email">
+                        <br><br>
+                    <label for="password">Password*</label>
+
+                        <input type="password" id="password" placeholder="Password">
+                        <br><br>
+                    <label for="password">Confirm Password*</label>
+                        <input type="password" id="password" placeholder="Password">
+                        <br><br>
+                    <label for="birthDate">Date of Birth*</label>
+                        <input type="date" id="birthDate"><br><br>
+                    <label for="phoneNumber">Phone number </label>
+                        <input type="phoneNumber" id="phoneNumber" placeholder="Phone number">
+                        <br>
+                        <span id="small">Your phone number won't be disclosed anywhere </span><br><br>
+                        <label for="Height">Height*     </label>
+                        <input type="number" id="small" placeholder="Please write your height in centimetres">
+                        <label for="weight">     Weight*</label>
+                        <input type="number" id="small" placeholder="Please write your weight in kilograms"><br><BR>
+                    <label>Gender        </label>
+                                <label>
+                                    <input type="radio" id="femaleRadio" value="Female">Female
+                                </label>
+                                <label>
+                                    <input type="radio" id="maleRadio" value="Male">     Male
+                                </label>
+                                <br><BR>
+                        <span id="small">*Required fields</span>
+<br><br>
+                <button type="submit" id="submit">Register</button>
+            </form>
+
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer id="footer"><b>
+Copyrights &copy; 1999 verified!!!!</b>
+</footer>
+</body>
+</html>
