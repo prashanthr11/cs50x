@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title> Login Page </title> <!--  Title-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">  <!-- My CSS sheets file-->
+<script>    // JS
+  function loggedin(){
+    alert("Logged in!!!")
+  }
+</script>
+</head>
+
+
+<!-- BODY -->
+
+<body id = "body">
+
+<nav class = "nav1">
+
+<img src="logo.jpg" alt = "logo" width = 100 height = 100>   <!-- LOGO -->
+<p align="right">
+
+<a href="Signup Form.html" alt = "Signup" > Signup </a>   <!-- Registration Form -->
+</p>
+</nav>
+
+
+<div class="div">
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="About.html">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Contact us.html">Contact Us</a>
+  </li>
+</ul>
+
+
+
+<form align="center" onsubmit="loggedin(); return true;">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" required><BR>
+    <small id="emailHelp" align="center">We'll never share your email with anyone else.</small>
+  </div>
+  <div>
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password">
+  </div>
+  <div>
+    <input type="checkbox">
+    <label for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" id="submit">Login</button>
+</form>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer id="footer">
+Copyrights &copy; !999 verified!!!!
+</footer>
+</body>
+</html>
