@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Account
+{% endblock %}
+
+{% block main %}
+   <div class="table-responsive" background-color="white">
+    <table class="table table-striped table-hover">
+        <tbody>
+            {% for detail in details %}
+                <tr><td> First Name </td>
+                    <td> {{ detail.first_name }} </td></tr>
+                <tr><td> Last Name </td>
+                    <td> {{ detail.last_name }} </td></tr>
+                <tr><td> Email ID </td>
+                    <td> {{ detail.email }} </td></tr>
+                <tr><td> Username </td>
+                    <td> {{ detail.username }} </td></tr>
+                <tr><td> Address </td>
+                    <td> {{ detail.address }} </td></tr>
+                <tr><td> City </td>
+                    <td> {{ detail.city }} </td></tr>
+                <tr><td> Mobile Number </td>
+                    <td> {{ detail.mobile }} </td></tr>
+                <tr><td> Pincode </td>
+                    <td> {{ detail.pincode }} </td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

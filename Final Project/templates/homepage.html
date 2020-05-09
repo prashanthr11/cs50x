@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Welcome
+{% endblock %}
+
+{% block main %}
+<div class="shadow-lg p-3 mb-5 rounded">
+    <form action="/homepage" method="post">
+        <div class="container">
+              <div class="row">
+                   <div class="col-xs-8 col-xs-offset-2" color=#007bff>
+                        <div class="input-group">
+                            <div class="input-group-btn search-panel">
+                                 <label id = "label" for="categorry" color: > Categories:  </label>
+                                 <select class="form-control" name="category">
+                                    <option value="type"> Type </option>
+                                    <option value="director"> Director </option>
+                                    <option value="title" selected> Title </option>
+                                    <option value="country"> Country </option>
+                                </select>
+                            </div>
+                            <input autocomplete="off" autofocus type="text" class="form-control" size="80" name="name" id="search" placeholder="Enter Name">
+                        </div><br>
+                <button class="btn btn-primary" type="submit">Search</button>
+                   </div>
+              </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

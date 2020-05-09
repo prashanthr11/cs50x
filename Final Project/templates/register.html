@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+<div>
+    <div>
+        <div>
+            <form action="/register" method="post">
+                 <div class="form-group">
+                     <label for="fn"> First Name: </label>
+                    <input autocomplete="off" autofocus class="form-control" name="first name" placeholder="First name" type="text" id="fn"/>
+                    <label for="ln"> Last Name: </label>
+                    <input class="form-control" name="last name" placeholder="Last name" type="text" id = "ln"/>
+                </div>
+                <div class="form-group">
+                    <label for="em"> E-Mail ID: </label>
+                    <input class="form-control" id="em" name="mail" placeholder="Enter Email ID" type="email"/>
+                </div>
+                <div class="form-group">
+                    <label for="un"> Username: </label>
+                    <input class="form-control" id="un" name="username" placeholder="Username" type="text" required/>
+                </div>
+                <div class="form-group">
+                    <label for="pswd"> Password: </label>
+                    <input class="form-control" id="pswd" name="password" placeholder="Password" type="password" required/>
+                </div>
+                <div class="form-group">
+                    <label for="cpswd"> Confirm Password: </label>
+                    <input class="form-control" name="confirmation" id="cpswd" placeholder="Confirm Password" type="password" required/>
+                </div>
+                <div class="form-group">
+                    <label for="add"> Address: </label>
+                    <input class="form-control" id="add" name="address" placeholder="Address" type="text" required/>
+                </div>
+                <div class="form-group">
+                    <label for="pn"> Phone Number: </label>
+                    <input class="form-control" id="pn" name="mobile number" placeholder="Phone Number" type="number" required/>
+                </div>
+                <div class="form-group">
+                    <label for="cty"> City: </label>
+                    <input id = "cty" class="form-control" name="city" placeholder="City" type="text" required/>
+                </div>
+                <div class="form-group">
+                    <label for="pncd"> Pincode: </label>
+                    <input id="pncd" class="form-control" name="pincode" placeholder="Pincode" type="text" required/>
+                </div>
+                <button class="btn btn-primary" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
