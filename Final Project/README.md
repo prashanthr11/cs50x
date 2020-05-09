@@ -1,7 +1,9 @@
 CS50-FINAL-PROJECT
 
-This project used for getting the movies ratings, casts, Year of Release etc.,
+This project used for getting the movies ratings, casts, Year of Release, small Description about the movie etc.,
+
 REFERENCES
+
 Other Websites that I used:
 
 w3schools
